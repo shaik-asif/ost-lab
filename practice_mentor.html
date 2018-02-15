@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/practice_mentor.css">
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Let us code!</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="practice_mentor.html">Practice</a></li>
+                        <li><a href="competition_mentor.html">Competitions</a></li>
+                        <li><a href="practice_student.html">Practice(S)</a></li>
+                        <li><a href="competition_student.html">Competitions(S)</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="authentication.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron-fluid">
+                <h1 class="display-3">
+                    Let us code!
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="questions-body">
+            <div class="container .mx-auto questions-container">
+                <div class="row"> 
+                    <div class="col-lg-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active"><a data-toggle="pill" href="#home">Edit Questions</a></li>
+                            <li><a data-toggle="pill" href="#menu1">Post Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">            
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active questions">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li role="presentation"><a href="codeeditor.html">Print Hello, world!</a></li>
+                                    <li role="presentation"><a href="codeeditor.html">Palindrome of a string</a></li>
+                                    <li role="presentation"><a href="codeeditor.html">Magic number</a></li>
+                                </ul>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <h3>Post a question</h3>
+                                <p>Enter a question, description, test cases and their outputs in the respective input fields.</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="questionTextField">Sample question</label>
+                                        <input type="text" class="form-control" aria-describedby="questionTextField" placeholder="Enter a question">
+                                        <small id="questionHelp">Enter a short version of the question</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="questionDescription">Description</label>
+                                        <textarea rows="3" cols="50" class="form-control" placeholder="Enter description"></textarea>
+                                        <small id="descriptionHelp">Enter description for the question that you want to post</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="testcases">Test cases</label>
+                                        <textarea rows="3" cols="50" class="form-control" placeholder="Enter testcases"></textarea>
+                                        <small id="testcasesHelp">Enter testcases each seperated by a new line!</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="outputs">Outputs</label>
+                                        <textarea rows="3" cols="50" class="form-control" placeholder="Enter outputs"></textarea>
+                                        <small id="outputsHelp">Enter outputs for each testcase seperated by a new line!</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+

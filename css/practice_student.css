@@ -1,0 +1,68 @@
+h1 {
+    color: white;
+    font-size: 48px;
+}
+
+body {
+    height: 100vh;
+    background: url('banner-2.jpg');
+    background-attachment: fixed;
+}
+
+.jumbotron-fluid {
+    padding: 24px;
+    height: 20vh;
+}
+
+.questions-body {
+    width: 100%;
+    background: white;
+    height: 100%;
+    
+    padding-top: 84px;
+}
+
+.questions-container {  
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.row {
+    padding: 24px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+}
+
+.questions ul li {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0px;
+}
+
+.navbar {
+    background: white;
+    width: 100%;
+    padding: 12px;
+}
+
+.navbar ul li {
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    background: white;
+    border-radius: 4px;
+    color:blue;
+}
+
+.navbar-toggler-icon {
+    background: black;
+}
+

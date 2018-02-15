@@ -1,0 +1,23 @@
+body {
+    background: url(banner-2.jpg);
+}
+
+label {
+    color: white;
+}
+
+#emailHelp {
+    color: white;
+}
+
+.container {
+    display: block;
+    margin-top:48px;
+    margin: auto;
+    width: 50%;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+}

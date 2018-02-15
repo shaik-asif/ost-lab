@@ -1,0 +1,88 @@
+html, .container{
+  height: 100%;
+  width: 100%;
+}
+
+.left_area{
+  margin: 0;
+  margin-left: 5px;
+  height: auto;
+  width: 53%;
+  float: left;
+  box-shadow: 0 20px 15px #b9b9b9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.left_area > h3{
+  margin: 0;
+  height: 25px;
+  padding: 15px;
+  background: #cccccc;
+}
+
+#input > #question, #output > #test_cases, #comments > #comment, #outputs > #_output{
+  height: 80px;
+  width: 98%;
+  overflow: auto;
+}
+
+.right_area{
+  margin-left: 10px;
+  height: 645px;
+  width: 45%;
+  float: right;
+  box-shadow: 0 8px 15px #b9b9b9;
+}
+
+#input, #output, #comments, #outputs{
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+
+#form_editor{
+  height: inherit;
+}
+
+#editor{
+  border: none;
+  background: #00334d;
+  height: inherit;
+  width: 640px;
+  margin: 0;
+  color: #ccffff;
+  font-size: 15px;
+  overflow: auto;
+}
+
+.right_area > #heading{
+  margin: 0;
+  padding: 15px;
+  background: #cccccc;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+::placeholder{
+  color: #ccffff;
+}
+
+input[type=submit]{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  font-family: Arial;
+  color: white;
+  background: #0099cc;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+input[type=submit]:focus{
+  opacity: 0.9;
+}

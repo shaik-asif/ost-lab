@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Let us code!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="js/signin.js"></script>
+        <script src="js/signup.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/authentication.css">
+    </head>
+    <body>
+
+        <div class="card .mx-auto">
+            <div class="card-body">
+                <div class="container">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active">
+                            <a data-toggle="pill" href="#signin">Sign In</a>
+                        </li>
+                        <li>
+                            <a data-toggle="pill" href="#signup">Sign Up</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="signin" class="tab-pane fade in active">
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="signinEmail">Email address</label>
+                                    <input type="email" class="form-control" id="signinEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="signinPassword">Password</label>
+                                    <input type="password" class="form-control" id="signinPassword" placeholder="Password">
+                                </div>
+                                <div class="radio">
+                                    <label class="radio-inline"><input type="radio" name="student">Student</label>
+                                    <label class="radio-inline"><input type="radio" name="mentor">Mentor</label>
+                                </div>
+                                <button class="btn btn-primary signin" onclick="signin()" style="display: block;" id="signinButton">Sign In</button>
+                            </form>
+
+                        </div>
+                        <div id="signup" class="tab-pane fade">
+
+                            <form method="post" action="signin.php">
+                                <div class="form-group">
+
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="signupUsername" aria-describedby="namehelp" placeholder="Enter Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone</label>
+                                    <input type="phone" class="form-control" id="signupPhone" placeholder="Phone">
+                                </div>
+                                <div class="radio">
+                                    <label class="radio-inline"><input type="radio" name="student">Student</label>
+                                    <label class="radio-inline"><input type="radio" name="mentor">Mentor</label>
+                                </div>
+                                <button class="btn btn-primary signup" style="display: block;" id="signupButton" onclick="signup()">Sign Up</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+

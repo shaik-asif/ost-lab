@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>CodeArena</title>
+    <link rel="stylesheet" href="css/codeeditor.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left_area">
+        <h3><center>Let us code</center></h3>
+        <div id="input">
+          <h3 id="heading">Question</h3>
+          <textarea id="question" name="question" form="usrform" readonly="readonly"></textarea>
+        </div>
+
+        <div id="output">
+          <h3 id="heading">Input and Sample Test Cases</h3>
+          <textarea id="test_cases" name="test_cases" form="usrform" readonly="readonly"></textarea>
+        </div>
+
+        <div id="comments">
+          <h3 id="heading">Comments</h3>
+          <textarea id="comment" name="comment" form="usrform" readonly="readonly"></textarea>
+        </div>
+
+        <div id="outputs">
+          <h3 id="heading">Sample output</h3>
+          <textarea id="_output" name="_output" form="usrform" readonly="readonly"></textarea>
+        </div>
+      </div>
+
+      <div class="right_area">
+        <h3 id="heading"><center>Editor</center></h3>
+        <form id="form_editor" method="post" action="">
+          <textarea id="editor" name="editor" form="usrform" placeholder="Start coding..." onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
+          <input type="submit" value="Submit" onclick="">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
